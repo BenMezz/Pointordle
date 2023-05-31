@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pointordle</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="module" src="index.js"></script>
+	<link rel="icon" href="https://www.nytimes.com/games-assets/v2/assets/wordle/wordle_logo_192x192.png">
+	</link:icon>
+</head>
+
+<body>
+	<dialog id="modal">
+		<header>
+			<h2>Points</h2>
+			<button class="close-btn" id="close-btn">
+				<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20"><path fill="var(--color-tone-1)" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+			</button>
+		</header>
+		<p class="points"></p>
+		<div class="points-section">
+			<h3>History</h3>
+			<div>
+				<p class="dates"></p>
+				<div><p>0</p></div>
+			</div>
+			<div>
+				<p class="dates"></p>
+				<div><p>0</p></div>
+			</div>
+			<div>
+				<p class="dates"></p>
+				<div><p>0</p></div>
+			</div>
+		</div>
+	</dialog>
+	<div class="center">
+		<header>
+			<h1>Pointordle</h1>
+		</header>
+		<div class="container">
+			<div class="one-row">
+				<div id="active"></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="two-row">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="three-row">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="four-row">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="five-row">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="six-row">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="seven-row">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="eight-row">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<div class="keyboard">
+		<div>
+			<div id="q">Q</div>
+			<div id="w">W</div>
+			<div id="e">E</div>
+			<div id="r">R</div>
+			<div id="t">T</div>
+			<div id="y">Y</div>
+			<div id="u">U</div>
+			<div id="i">I</div>
+			<div id="o">O</div>
+			<div id="p">P</div>
+		</div>
+		<div>
+			<div id="a">A</div>
+			<div id="s">S</div>
+			<div id="d">D</div>
+			<div id="f">F</div>
+			<div id="g">G</div>
+			<div id="h">H</div>
+			<div id="j">J</div>
+			<div id="k">K</div>
+			<div id="l">L</div>
+		</div>
+		<div>
+			<div id="enter" class="enter">ENTER</div>
+			<div id="z">Z</div>
+			<div id="x">X</div>
+			<div id="c">C</div>
+			<div id="v">V</div>
+			<div id="b">B</div>
+			<div id="n">N</div>
+			<div id="m">M</div>
+			<div id="backspace" class="backspace">
+				<svg>
+					<path
+						d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z">
+					</path>
+				</svg>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
