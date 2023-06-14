@@ -12,10 +12,10 @@
 }
 
 @font-face {
-    font-family: 'Wordle';
-    src: url('karnakcondensed-normal-700.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Wordle';
+	src: url('karnakcondensed-normal-700.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 	color: white;
 	font-weight: bold;
 	height: 100svh;
+	overflow: hidden;
 }
 
 h2 {
@@ -45,7 +46,8 @@ h2 {
 .dates {
 	float: left;
 	position: relative;
-	right: 40px;
+	translate: -100%;
+	right: 10px;
 	color: gray;
 }
 
@@ -104,6 +106,7 @@ h3 {
 	width: 7%;
 	min-width: 7%;
 	position: relative;
+	color: white;
 }
 
 .center {
@@ -234,7 +237,7 @@ h1 {
 
 .keyboard > * > * {
 	display: inline-block;
-    max-width: 8vw;
+	max-width: 8vw;
 	width: 43px;
 	height: 58px;
 	background-color: #818384;
@@ -245,7 +248,7 @@ h1 {
 }
 
 .backspace {
-    max-width: 12.75vw;
+	max-width: 12.75vw;
 	width: 66px;
 }
 
@@ -257,8 +260,51 @@ h1 {
 
 .enter {
 	font-size: 0.75rem;
-    max-width: 12.75vw;
+	max-width: 12.75vw;
 	width: 66px;
+}
+
+@keyframes animation3 {
+	0% {
+		background-color: var(--animation-color);
+		border: 2px solid var(--animation-color);
+		color: white;
+	}
+
+	50% {
+		translate: 0 -50%;
+	}
+
+	100% {
+		translate: 0;
+		background-color: var(--animation-color);
+		border: 2px solid var(--animation-color);
+		color: white;
+	}
+}
+
+.animate3 {
+	animation: animation3 600ms both;
+}
+
+.animate3:nth-child(2) {
+	animation-delay: 150ms;
+}
+
+.animate3:nth-child(3) {
+	animation-delay: 300ms;
+}
+
+.animate3:nth-child(4) {
+	animation-delay: 450ms;
+}
+
+.animate3:nth-child(5) {
+	animation-delay: 600ms;
+}
+
+.animate3:nth-child(6) {
+	animation-delay: 750ms;
 }
 
 @media (prefers-color-scheme: light) {
@@ -287,6 +333,7 @@ h1 {
 
 	dialog {
 		box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.2);
+		color: black;
 	}
 
 	dialog::backdrop {
